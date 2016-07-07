@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+</head>
+<body>
+    <div class="body">
+
+        {%  for item in lists %}
+            <dl>
+                    <dt>
+                        {{ item.ID }}
+                    </dt>
+
+                    <dt>
+                        {{ item.Name }}
+                    </dt>
+
+                    <dt>
+                        {{ item.Mobile }}
+                    </dt>
+            </dl>
+        {% endfor %}
+    </div>
+</body>
+</html>
