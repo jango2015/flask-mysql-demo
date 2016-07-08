@@ -25,5 +25,6 @@ def create_app(config_name):
     app.register_blueprint(main_blueprint)
     from .qsyk import qsyk as qsyk_blueprint
     app.register_blueprint(qsyk_blueprint)
-
+    from .wuxidemo import wuxithat as wuxi_blueprint
+    app.register_blueprint(wuxi_blueprint)
     return app

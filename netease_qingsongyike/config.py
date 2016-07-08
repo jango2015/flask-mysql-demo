@@ -7,15 +7,16 @@ class Config:
         pass
 
 class DevelopmentConfig(Config):
-    DEBUG = True
-    SQLALCHEMY_DATABASE_URI = "mysql+mysqlconnector://test:hello@192.168.111.163/data"
+    # DEBUG = True
+    DEBUG = False
+    SQLALCHEMY_DATABASE_URI = "mysql+mysqlconnector://root:123456@localhost/datademo"
 
 class TestingConfig(Config):
     TESTING = True
-    SQLALCHEMY_DATABASE_URI = "mysql+mysqlconnector://test:hello@192.168.111.163/test"
+    SQLALCHEMY_DATABASE_URI = "mysql+mysqlconnector://root:123456@localhost/test"
 
 class ProductionConfig(Config):
-    SQLALCHEMY_DATABASE_URI = "mysql+mysqlconnector://test:hello@192.168.111.163/server"
+    SQLALCHEMY_DATABASE_URI = "mysql+mysqlconnector://root:123456@localhost/server"
 
 config = {
     'development' : DevelopmentConfig,
