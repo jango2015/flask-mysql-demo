@@ -21,7 +21,7 @@ class DbService:
 
         finally:
             connection.close()
-    @staticmethod
+    @staticmethod           
     def getall():
         try:
             with connection.cursor() as cursor:
