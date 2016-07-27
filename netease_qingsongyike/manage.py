@@ -1,13 +1,17 @@
 #!/usr/bin/env python
+# -- coding: UTF-8 --
 import os
-from app import create_app, db
+from app import create_app , db
 from app.models import Qingsongyike
+# from flask_sqlalchemy import SQLAlchemy
 from flask_script import Manager, Shell
 from flask_migrate import Migrate, MigrateCommand
 
 app = create_app(os.getenv('FLASK_CONFIG') or 'default')
+# db = SQLAlchemy(app)
+# migrate = Migrate(app , db)
+migrate = Migrate(app,db)
 manager = Manager(app)
-migrate = Migrate(app)
 
 def make_shell_context():
     return dict(app=app, db=db, Qingsongyike=Qingsongyike)

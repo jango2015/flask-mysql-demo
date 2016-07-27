@@ -1,3 +1,4 @@
+# -- coding: UTF-8 --
 import os
 
 class Config:
@@ -7,8 +8,8 @@ class Config:
         pass
 
 class DevelopmentConfig(Config):
-    # DEBUG = True
-    DEBUG = False
+    DEBUG = True
+    # DEBUG = False
     SQLALCHEMY_DATABASE_URI = "mysql+mysqlconnector://root:123456@localhost/datademo"
 
 class TestingConfig(Config):
