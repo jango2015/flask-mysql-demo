@@ -11,3 +11,10 @@ class Qingsongyike(db.Model):
     cover_img = db.Column(db.String(512))
     url_3g = db.Column(db.String(512))
     body = db.Column(db.Text)
+
+
+class  User(db.Model):
+    __tablename__ = "Users"
+    id= db.Column(db.Integer(), primary_key=True, autoincrement= True)
+    name =db.Column(db.String(32))
+    mobile =db.Column(db.String(32))
