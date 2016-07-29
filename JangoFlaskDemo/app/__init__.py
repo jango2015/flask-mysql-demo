@@ -22,5 +22,7 @@ def create_app(config_name):
     db.init_app(app)
     from .weather import cityweather as weather_blueprint
     app.register_blueprint(weather_blueprint)
+    from .wuxidemo import  users as users_blueprint
+    app.register_blueprint(users_blueprint)
 
     return  app

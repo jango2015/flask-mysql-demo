@@ -1,5 +1,5 @@
 from app.services.weather import get_weather
-from app.services.location import get_location
+# from app.services.location import get_location
 from flask import render_template
 from . import cityweather
 
