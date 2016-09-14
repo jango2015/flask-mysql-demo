@@ -2,7 +2,7 @@ import os
 from app import create_app, db
 from flask_script import Manager, Shell
 from flask_migrate import Migrate,MigrateCommand
-
+from flup.server.fcgi import  WSGIServer
 app = create_app(os.getenv('FLASK_CONFIG') or 'default')
 migrate =Migrate(app,db)
 manager = Manager(app)
@@ -27,3 +27,4 @@ def wether():
 if __name__ == '__main__':
     # app.run()
     manager.run()
+    # WSGIServer(manager , bindAddress='tmp/flaskr-fcgi.sockk').run()
