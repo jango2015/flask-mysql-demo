@@ -5,7 +5,7 @@ class Config:
     def init_app(app):
         pass
 class DevConfig(Config):
-    DEBUG = True
+    DEBUG = False
     SQLALCHEMY_DATABASE_URL = "mysql+mysqlconnector://root:123456@localhost/datademo"
 class TestConfig(Config):
     TESTING = True
