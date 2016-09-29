@@ -24,16 +24,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="baidujob.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="baidujob.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/baidujob.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="122" column="24" selection-start-line="122" selection-start-column="24" selection-end-line="122" selection-end-column="24" />
+            <state relative-caret-position="285">
+              <caret line="109" column="67" selection-start-line="109" selection-start-column="67" selection-end-line="109" selection-end-column="67" />
               <folding>
                 <element signature="e#0#42#0" expanded="true" />
                 <element signature="e#5875#6658#0" expanded="false" />
                 <element signature="e#5944#5990#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="eleme_spider.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/eleme_spider.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="7" column="219" selection-start-line="7" selection-start-column="219" selection-end-line="7" selection-end-column="219" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -62,6 +72,7 @@
       <list>
         <option value="$PROJECT_DIR$/mongoservice.py" />
         <option value="$PROJECT_DIR$/baidujob.py" />
+        <option value="$PROJECT_DIR$/eleme_spider.py" />
       </list>
     </option>
   </component>
@@ -365,6 +376,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="3e6ffee5-fa93-45ff-8833-0c162a674c53" name="Default" comment="" />
@@ -391,7 +405,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="2576" height="1416" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13116057" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -449,13 +463,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/baidujob.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="122" column="24" selection-start-line="122" selection-start-column="24" selection-end-line="122" selection-end-column="24" />
+        <state relative-caret-position="285">
+          <caret line="109" column="67" selection-start-line="109" selection-start-column="67" selection-end-line="109" selection-end-column="67" />
           <folding>
             <element signature="e#0#42#0" expanded="true" />
             <element signature="e#5875#6658#0" expanded="false" />
             <element signature="e#5944#5990#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eleme_spider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="219" selection-start-line="7" selection-start-column="219" selection-end-line="7" selection-end-column="219" />
+          <folding />
         </state>
       </provider>
     </entry>
