@@ -6,7 +6,7 @@ from mongoservice import *
 # import io
 
 
-filepath =os.path.abspath("./jobs.json")
+filepath =os.path.abspath("./baidu_zhaopin_jobs.json")
 
 
 def convert_to_dict(obj):
@@ -62,53 +62,7 @@ def get_jobs(pagenumber,pagesize,keyword):
         salary = item["salary"]
         if org_salary.find("0000") != -1 or salary.find("000")!=-1:
             jobs.append(item)
-            jobobj = Job_item()
-            keys =item.keys()
-            # print(keys)
-            jobobj.loc = item['loc'] if 'loc' in keys else ''
-            jobobj.type = item['type'] if 'type' in keys else ''
-            jobobj.enddate = item['enddate'] if 'enddate' in keys else ''
-            jobobj.experience = item['experience'] if 'experience' in keys else ''
-            jobobj.dgw_trunk = item['dgw_trunk'] if 'dgw_trunk' in keys else ''
-            jobobj.build = item['build'] if 'build' in keys else ''
-            jobobj.jobwapurl = item['jobwapurl'] if 'jobwapurl' in keys else ''
-            jobobj.jobsecondclass = item['jobsecondclass'] if 'jobsecondclass' in keys else ''
-            jobobj.dgw_site = item['dgw_site'] if 'dgw_site' in keys else ''
-            jobobj.oauthjoburl = item['oauthjoburl'] if 'oauthjoburl' in keys else ''
-            jobobj.employerurl = item['employerurl'] if 'employerurl' in keys else ''
-            jobobj.companydescripti = item['companydescripti'] if 'companydescripti' in keys else ''
-            jobobj.sex = item['sex'] if 'sex' in keys else ''
-            jobobj.salary = item['salary'] if 'salary' in keys else ''
-            jobobj.secondindustry = item['secondindustry'] if 'secondindustry' in keys else ''
-            jobobj.employertype = item['employertype'] if 'employertype' in keys else ''
-            jobobj.haswapurl = item['haswapurl'] if 'haswapurl' in keys else ''
-            jobobj.joblink = item['joblink'] if 'joblink' in keys else ''
-            jobobj.number = item['number'] if 'number' in keys else ''
-            jobobj.size = item['size'] if 'size' in keys else ''
-            jobobj.welfare = item['welfare'] if 'welfare' in keys else ''
-            jobobj.description = item['description'] if 'description' in keys else ''
-            jobobj.name = item['name'] if 'name' in keys else ''
-            jobobj.title = item['title'] if 'title' in keys else ''
-            jobobj.age = item['age'] if 'age' in keys else ''
-            jobobj.jobfirstclass = item['jobfirstclass'] if 'jobfirstclass' in keys else ''
-            jobobj.url = item['url'] if 'url' in keys else ''
-            jobobj.sourcelink = item['sourcelink'] if 'sourcelink' in keys else ''
-            jobobj.industry = item['industry'] if 'industry' in keys else ''
-            jobobj.StdStg = item['StdStg'] if 'StdStg' in keys else ''
-            jobobj.district = item['district'] if 'district' in keys else ''
-            jobobj.source = item['source'] if 'source' in keys else ''
-            jobobj.depart = item['depart'] if 'depart' in keys else ''
-            jobobj.city = item['city'] if 'city' in keys else ''
-            jobobj.domain = item['domain'] if 'domain' in keys else ''
-            jobobj.startdate = item['startdate'] if 'startdate' in keys else ''
-            jobobj.education = item['education'] if 'education' in keys else ''
-            jobobj.jobthirdclass = item['jobthirdclass'] if 'jobthirdclass' in keys else ''
-            jobobj.commonname = item['commonname'] if 'commonname' in keys else ''
-            jobobj.companyaddress = item['companyaddress'] if 'companyaddress' in keys else ''
-            jobobj.province = item['province'] if 'province' in keys else ''
-            jobobj.location = item['location'] if 'location' in keys else ''
-            jobobj.email = item['email'] if 'email' in keys else ''
-
+            jobobj = jsonitem_to_obj(item)
             jobobjs.add(jobobj)
         else:
             continue
@@ -130,8 +84,53 @@ def get_jobs(pagenumber,pagesize,keyword):
     # f.close()
     # print(jdata)
     return jdata
-
-
+def jsonitem_to_obj(item):
+    jobobj = Job_item()
+    keys =item.keys()
+    jobobj.loc = item['loc'] if 'loc' in keys else ''
+    jobobj.type = item['type'] if 'type' in keys else ''
+    jobobj.enddate = item['enddate'] if 'enddate' in keys else ''
+    jobobj.experience = item['experience'] if 'experience' in keys else ''
+    jobobj.dgw_trunk = item['dgw_trunk'] if 'dgw_trunk' in keys else ''
+    jobobj.build = item['build'] if 'build' in keys else ''
+    jobobj.jobwapurl = item['jobwapurl'] if 'jobwapurl' in keys else ''
+    jobobj.jobsecondclass = item['jobsecondclass'] if 'jobsecondclass' in keys else ''
+    jobobj.dgw_site = item['dgw_site'] if 'dgw_site' in keys else ''
+    jobobj.oauthjoburl = item['oauthjoburl'] if 'oauthjoburl' in keys else ''
+    jobobj.employerurl = item['employerurl'] if 'employerurl' in keys else ''
+    jobobj.companydescripti = item['companydescripti'] if 'companydescripti' in keys else ''
+    jobobj.sex = item['sex'] if 'sex' in keys else ''
+    jobobj.salary = item['salary'] if 'salary' in keys else ''
+    jobobj.secondindustry = item['secondindustry'] if 'secondindustry' in keys else ''
+    jobobj.employertype = item['employertype'] if 'employertype' in keys else ''
+    jobobj.haswapurl = item['haswapurl'] if 'haswapurl' in keys else ''
+    jobobj.joblink = item['joblink'] if 'joblink' in keys else ''
+    jobobj.number = item['number'] if 'number' in keys else ''
+    jobobj.size = item['size'] if 'size' in keys else ''
+    jobobj.welfare = item['welfare'] if 'welfare' in keys else ''
+    jobobj.description = item['description'] if 'description' in keys else ''
+    jobobj.name = item['name'] if 'name' in keys else ''
+    jobobj.title = item['title'] if 'title' in keys else ''
+    jobobj.age = item['age'] if 'age' in keys else ''
+    jobobj.jobfirstclass = item['jobfirstclass'] if 'jobfirstclass' in keys else ''
+    jobobj.url = item['url'] if 'url' in keys else ''
+    jobobj.sourcelink = item['sourcelink'] if 'sourcelink' in keys else ''
+    jobobj.industry = item['industry'] if 'industry' in keys else ''
+    jobobj.StdStg = item['StdStg'] if 'StdStg' in keys else ''
+    jobobj.district = item['district'] if 'district' in keys else ''
+    jobobj.source = item['source'] if 'source' in keys else ''
+    jobobj.depart = item['depart'] if 'depart' in keys else ''
+    jobobj.city = item['city'] if 'city' in keys else ''
+    jobobj.domain = item['domain'] if 'domain' in keys else ''
+    jobobj.startdate = item['startdate'] if 'startdate' in keys else ''
+    jobobj.education = item['education'] if 'education' in keys else ''
+    jobobj.jobthirdclass = item['jobthirdclass'] if 'jobthirdclass' in keys else ''
+    jobobj.commonname = item['commonname'] if 'commonname' in keys else ''
+    jobobj.companyaddress = item['companyaddress'] if 'companyaddress' in keys else ''
+    jobobj.province = item['province'] if 'province' in keys else ''
+    jobobj.location = item['location'] if 'location' in keys else ''
+    jobobj.email = item['email'] if 'email' in keys else ''
+    return jobobj
 
 def get_jobs_by_pagenums():
     page_num = 1
