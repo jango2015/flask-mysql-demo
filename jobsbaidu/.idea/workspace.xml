@@ -24,14 +24,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="baidujob.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="baidujob.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/baidujob.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-228">
-              <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+            <state relative-caret-position="76">
+              <caret line="32" column="45" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
               <folding>
-                <element signature="e#0#42#0" expanded="true" />
+                <element signature="e#205#289#0" expanded="false" />
+                <element signature="e#324#505#0" expanded="false" />
                 <element signature="e#2281#5307#0" expanded="false" />
+                <element signature="e#5341#5562#0" expanded="false" />
                 <element signature="e#5588#6371#0" expanded="false" />
                 <element signature="e#5657#5703#0" expanded="false" />
               </folding>
@@ -39,11 +41,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="eleme_spider.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eleme_spider.py">
+      <file leaf-file-name="common.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="186" selection-start-line="7" selection-start-column="186" selection-end-line="7" selection-end-column="219" />
+            <state relative-caret-position="513">
+              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -52,9 +54,21 @@
       <file leaf-file-name="mongoservice.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mongoservice.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+            <state relative-caret-position="76">
+              <caret line="4" column="10" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="10" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="eleme_spider.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/eleme_spider.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="9" column="176" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="176" />
+              <folding>
+                <element signature="e#0#51#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -71,9 +85,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/eleme_spider.py" />
-        <option value="$PROJECT_DIR$/mongoservice.py" />
         <option value="$PROJECT_DIR$/baidujob.py" />
+        <option value="$PROJECT_DIR$/common.py" />
+        <option value="$PROJECT_DIR$/mongoservice.py" />
+        <option value="$PROJECT_DIR$/eleme_spider.py" />
       </list>
     </option>
   </component>
@@ -457,8 +472,10 @@
         <state relative-caret-position="2071">
           <caret line="109" column="67" selection-start-line="109" selection-start-column="67" selection-end-line="109" selection-end-column="67" />
           <folding>
-            <element signature="e#0#42#0" expanded="true" />
+            <element signature="e#205#289#0" expanded="false" />
+            <element signature="e#324#505#0" expanded="false" />
             <element signature="e#2281#5307#0" expanded="false" />
+            <element signature="e#5341#5562#0" expanded="false" />
             <element signature="e#5588#6371#0" expanded="false" />
             <element signature="e#5657#5703#0" expanded="false" />
           </folding>
@@ -469,7 +486,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -489,31 +508,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eleme_spider.py">
+    <entry file="file://$PROJECT_DIR$/common.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="186" selection-start-line="7" selection-start-column="186" selection-end-line="7" selection-end-column="219" />
+        <state relative-caret-position="513">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mongoservice.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+        <state relative-caret-position="76">
+          <caret line="4" column="10" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/baidujob.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-228">
-          <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+        <state relative-caret-position="76">
+          <caret line="32" column="45" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
           <folding>
-            <element signature="e#0#42#0" expanded="true" />
+            <element signature="e#205#289#0" expanded="false" />
+            <element signature="e#324#505#0" expanded="false" />
             <element signature="e#2281#5307#0" expanded="false" />
+            <element signature="e#5341#5562#0" expanded="false" />
             <element signature="e#5588#6371#0" expanded="false" />
             <element signature="e#5657#5703#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eleme_spider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="176" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="176" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
           </folding>
         </state>
       </provider>
